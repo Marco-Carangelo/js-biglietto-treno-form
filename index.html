@@ -16,8 +16,10 @@
 
         <!-- header section -->
         <header>
-            <div class="container-fluid text-center py-4 bg-success border-bottom border-2 border-black">
-                <h1 class="">Calcolo biglietto treno</h1>
+            <div class="container-fluid text-center py-4 bg-success border-bottom border-2 border-black mb-4">
+                <a href="/index.html " class="link-opacity-75-hover text-decoration-none link-dark">
+                    <h1 class="fw-bolder">Calcolo biglietto treno</h1>
+                </a>
             </div>
 
         </header>
@@ -25,6 +27,45 @@
 
         <!-- main section -->
         <main>
+            <div class="container py-4 ">
+                <div class="row">
+                    <div class="col-8 mx-auto bg-light border-2 border rounded-4 ">
+
+                        <form action="">
+                            <!-- age field -->
+                            <div class="col-10  mx-auto py-4">
+                                <label for="user-age" class="form-label">Inserisci la tua età: </label>
+                                <input type="range" class="form-range " min="0" max="122" step="1" id="user-age"
+                                    name="user-age">
+                            </div>
+                            <!--/age field -->
+                            <!-- distance field -->
+                            <div class="col-10  mx-auto py-4">
+                                <label for="user-distance" class="form-label">Inserisci la distanza che vuoi percorrere
+                                    in km: </label>
+                                <input type="number" min="0" max="20000" step="1" id="user-distance"
+                                    name="user-distance">
+                            </div>
+                            <!-- /distance field -->
+                            <div class="col-10  mx-auto py-4">
+                                <button type="submit" class="btn btn-primary">Calcola biglietto</button>
+                                <button type="reset" class="btn btn-danger">Reset</button>
+
+                            </div>
+
+                        </form>
+
+                        <hr>
+                        <div class="col-10  mx-auto py-4">
+                            <h4>Prezzo del Biglietto: </h4>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
 
         </main>
         <!-- /main section -->
