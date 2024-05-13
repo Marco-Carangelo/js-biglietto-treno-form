@@ -29,37 +29,39 @@
         <main>
             <div class="container py-4 ">
                 <div class="row g-5">
-                    <div class="col-8 mx-auto bg-light border-2 border rounded-4 >
+                    <div class="col-8 mx-auto bg-light border-2 border rounded-4">
 
-                        <form action="" id=" main-form">
-                        <!-- age field -->
-                        <div class="col-10  mx-auto py-4">
-                            <label for="user-age" class="form-label">Inserisci la tua età: <span
-                                    class="years-label"></span></label>
-                            <input type="range" class="form-range " min="0" max="122" step="1" id="user-age"
-                                name="user-age" value="0">
-                        </div>
-                        <!--/age field -->
-                        <!-- distance field -->
-                        <div class="col-10  mx-auto py-4">
-                            <label for="user-distance" class="form-label">Inserisci la distanza che vuoi percorrere
-                                in km: </label>
-                            <input type="number" min="0" max="20000" step="1" id="user-distance" name="user-distance">
-                        </div>
-                        <!-- /distance field -->
-                        <div class="col-10  mx-auto py-4">
-                            <button type="submit" class="btn btn-primary">Calcola biglietto</button>
-                            <button type="reset" class="btn btn-danger">Reset</button>
+                        <form action="" id="main-form">
+                            <!-- age field -->
+                            <div class="col-10  mx-auto py-4">
+                                <label for="user-age" class="form-label">Inserisci la tua età: <span
+                                        class="years-label"></span></label>
+                                <input type="range" class="form-range " min="0" max="122" step="1" id="user-age"
+                                    name="user-age" value="0">
+                            </div>
+                            <!--/age field -->
+                            <!-- distance field -->
+                            <div class="col-10  mx-auto py-4">
+                                <label for="user-distance" class="form-label">Inserisci la distanza che vuoi percorrere
+                                    in km: </label>
+                                <input type="number" min="0" max="20000" step="1" id="user-distance"
+                                    name="user-distance">
+                            </div>
+                            <!-- /distance field -->
+                            <div class="col-10  mx-auto py-4">
+                                <button type="submit" class="btn btn-primary">Calcola biglietto</button>
+                                <button type="reset" class="btn btn-danger">Reset</button>
 
-                        </div>
+                            </div>
 
                         </form>
 
                     </div>
 
-                    <div class="col-8 mx-auto bg-light border-2 border rounded-4 ">
+                    <div class="col-8 mx-auto bg-light border-2 border rounded-4 " id="result-form">
 
                         <div class="col-10  mx-auto py-4">
+                            <p id="discount-print"></p>
                             <h4>Prezzo del Biglietto: <span id="result"></span> </h4>
 
                         </div>
